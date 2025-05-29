@@ -1,0 +1,64 @@
+:root {
+    --color-primary: #0A192F;
+    --color-secondary: #64FFDA;
+    --color-accent: #FF6B6B;
+    --color-text: #CCD6F6;
+    --color-background: #020C1B;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto Slab', serif;
+    color: var(--color-secondary);
+}
+
+nav {
+    background: var(--color-primary);
+    padding: 1em;
+}
+
+nav a {
+    color: var(--color-text);
+    margin-right: 1em;
+    text-decoration: none;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--color-secondary);
+    border-bottom: 2px solid var(--color-secondary);
+}
+
+button {
+    background: var(--color-secondary);
+    color: var(--color-primary);
+    padding: 0.5em 1em;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: var(--color-accent);
+    color: white;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 1em;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
